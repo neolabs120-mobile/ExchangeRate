@@ -66,4 +66,16 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // Retrofit 및 관련 라이브러리
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+
+    // OkHttp 로깅 인터셉터 (안정화 버전 사용)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+
+    // Moshi
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
+
+    // 디버그용 Compose UI 툴링
+    debugImplementation("androidx.compose.ui:ui-tooling:1.5.1")
 }
